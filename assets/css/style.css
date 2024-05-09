@@ -793,7 +793,101 @@ html{
 /* Carousel */
 .layout__carousel-games{
     grid-area: carousel;
+    margin: 1.5rem 0;
+    background-color: var(--color-bg-navbar);
+    padding: 3.4rem;
 }
+
+.carousel-game__list{
+    display: flex;
+}
+
+
+.carousel-games__item{
+    flex-basis: 25%;
+    position: relative;
+}
+
+.carousel-games__image-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-games__image-container:hover .carousel-games__img{
+    transform: scale(1.1);
+    
+}
+
+.carousel-games__img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.carousel-games__info{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-games__title{
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    
+    
+}
+
+.carousel-games__category{
+    text-transform: uppercase;
+    color: var(--color-primary);
+    opacity: .8;
+    font-size: 1.3rem;
+}
+
+.carousel-games__line{
+    background-color: var(--color-secondary);
+    height: .2rem;
+    width: 5rem;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+
+}
+
+.carousel-games__rating{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    
+}
+
+.circle__border{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__mark{
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
 
 /* Main */
 .layout__main{
