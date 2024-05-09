@@ -7,7 +7,7 @@
     --color-text-marquee: #7c7c7c;
     --color-bg-marquee: #EEE;
     --color-border-list: rgba(255,255,255, .3);
-    --color-hover-sublist-item: rgba(0,0,0,.05);
+    --color-hover-sublist-item: rgba(0,0,0,.1);
     --color-shadow: rgba(0,0,0,.10);
 
 }
@@ -654,7 +654,141 @@ html{
 /* Videos */
 .layout__videos{
     grid-area: videos;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
+.videos__subheader{
+    display: flex;
+    background-color: var(--color-bg-navbar);
+    padding: .5rem;
+    margin-bottom: 3rem;
+}
+
+.videos__container{
+    display: flex;
+    
+}
+
+.videos__main-video{
+    flex-basis: 66%;
+}
+.main-video__yt-video{
+    width: 100%;
+    
+}
+.main-video__youtube{
+    width: 100%;
+    height:46rem;
+}
+
+.main-video__detail{
+    height: auto;
+    width: 100%;
+    padding: 1.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--color-hover-sublist-item);
+}
+
+.main-video__title{
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    padding: .5rem 0;
+}
+
+.main-video__author{
+    color: var(--color-secondary);
+}
+
+.main-video__info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.main-video__info-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.main-video__views{
+    opacity: .4;
+}
+
+.main-video__comments{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    opacity: .4;
+}
+
+.main-video__date{
+    opacity: .4;
+}
+
+/* lista videos */
+.container__videos{
+    flex-basis: calc(34% - 3.5rem);
+    margin-left: 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    
+}
+.videos__list{
+    display: flex;
+    justify-content: space-between;
+}
+.videos__video{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    padding-bottom: 1.7rem;
+    border-bottom: 1px solid var(--color-hover-sublist-item);
+    
+}
+
+
+.video__title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    padding-bottom: .8rem;
+    font-weight: 700;
+    
+}
+
+
+.video__info{
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.video__author{
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+.video__date{
+    opacity: .4;
+}
+
+.video__img{
+    width: 8.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Carousel */
 .layout__carousel-games{
