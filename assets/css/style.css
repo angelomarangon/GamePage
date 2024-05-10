@@ -1334,3 +1334,98 @@ html{
     font-size: 1.7rem;
     font-weight: 500;
 }
+
+
+
+
+/* redes sociales */
+
+.aside__social{
+    margin-bottom: 3rem;
+}
+
+.social__item{
+    width: 100%;
+    height: 6.2rem;
+    padding: 1rem 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.social__link{
+    display: flex;
+    align-items: center;
+}
+
+.social__icon .fa-brands{
+    font-size: 3.8rem;
+    margin-right: 1rem;
+}
+
+.social__followers{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    
+}
+
+.social__word{
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    opacity: .7;
+}
+
+.social__numer{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social__item--blue{
+    background-color: var(--color-twitter);
+}
+
+.social__item--blue2{
+    background-color: var(--color-facebook);
+}
+
+.social__item--red{
+    background-color: var(--color-youtube);
+}
+
+.social__item--pink{
+    background-color: var(--color-instagram);
+}
+
+.social__item--orange{
+    background-color: var(--color-linkedin);
+}
+
+
+/* ultimos tweets */
+.aside__tweets{
+    width: 100%;
+    height: 16rem;
+    background-color: var(--color-twitter);
+    color: var(--color-primary);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.tweets__header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tweets__title{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.tweets__content{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
