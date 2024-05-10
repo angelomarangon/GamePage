@@ -586,6 +586,12 @@ html{
 
     position: absolute;
     top: 32%;
+
+    transition: all 300ms ease-in-out;
+}
+
+.highlights__category:hover{
+    background-color: var(--color-bg-navbar);
 }
 
 .highlights__title{
@@ -623,6 +629,18 @@ html{
     font-weight: 500;
 }
 
+.highlights__container-img{
+    overflow: hidden;
+}
+
+.highlights__img{
+    transition: all 300ms ease-in-out;
+}
+
+.highlights__post:hover .highlights__img{
+    transform: scale(1.1);
+}
+
 .highlights__footer{
     display: flex;
     justify-content: space-between;
@@ -650,8 +668,13 @@ html{
     padding: .5rem .5rem;
     font-size: 1.3rem;
     text-transform: capitalize;
+    font-weight: 500;
 }
 
+.footer-post__read-more:hover{
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
 
 
 
@@ -758,6 +781,10 @@ html{
     
 }
 
+.videos__video:hover .video__link{
+    color: var(--color-secondary);
+}
+
 
 .video__title{
     font-family: Arial, Helvetica, sans-serif;
@@ -784,6 +811,11 @@ html{
 
 .video__img{
     width: 8.6rem;
+    transition: all 300ms ease-in-out;
+}
+
+.videos__video:hover .video__img{
+    transform: scale(1.1);
 }
 
 
@@ -842,8 +874,14 @@ html{
     color: var(--color-primary);
     font-size: 2rem;
     font-weight: 600;
+    text-shadow: 1px 1px 3px black;
+
+    transition: all 300ms ease-in-out;
     
-    
+}
+
+.carousel-games__title:hover{
+    color: var(--color-secondary);
 }
 
 .carousel-games__category{
@@ -851,6 +889,12 @@ html{
     color: var(--color-primary);
     opacity: .8;
     font-size: 1.3rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+
+.carousel-games__category:hover{
+    color: var(--color-secondary);
 }
 
 .carousel-games__line{
@@ -932,10 +976,19 @@ html{
 .new-post__container-image{
     flex-basis: 50%;
     padding-right: 1.5rem;
-    position: relative;
+    position: relative; 
+}
+
+.main-post__link-image{
+    overflow: hidden;
 }
 .main-post__img{
     width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.new-post__container-image:hover .main-post__img{
+    transform: scale(1.1);
 }
 
 .main-post__container-category{
@@ -957,13 +1010,16 @@ html{
     flex-basis: 50%;
     padding-left: 2rem;
 }
-
+.main-post__info:hover .main-post__title{
+    color: var(--color-secondary);
+}
 .main-post__title{
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: 700;
     font-family: Helvetica, sans-serif;
     margin-bottom: 1.5rem;
+    transition: all 300ms ease-in-out;
 }
 
 .main-post__meta{
@@ -996,6 +1052,7 @@ html{
     margin: 1.5rem 0;
     font-size: 1.3rem;
     color: var(--color-text-marquee);
+    align-items: center;
 }
 
 .footer-info__container{
@@ -1008,6 +1065,12 @@ html{
     padding: .5rem .5rem;
     font-weight: 500;
     font-size: 1.2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__read-more:hover{
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .news__list{
@@ -1026,6 +1089,10 @@ html{
 }
 .news__img{
     width: 9rem;
+    transition: all 300ms ease-in-out;
+}
+.news__img:hover{
+    transform: scale(1.1);
 }
 
 .news__detail{
@@ -1039,6 +1106,12 @@ html{
     font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 1rem;
+
+    transition: all 300ms ease-in-out;
+}
+
+.news__title-post:hover{
+    color: var(--color-secondary);
 }
 
 .news__data{
@@ -1082,6 +1155,13 @@ html{
 }
 .game__img{
     width: 100%;
+    transition: all 300ms ease-in-out;
+}
+.game__img:hover{
+    transform: scale(1.1);
+}
+.game__link-image{
+    overflow: hidden;
 }
 
 .game__rating{
@@ -1111,7 +1191,7 @@ html{
 }
 
 .game__details:hover{
-    background-color: var(--color-secondary);
+    text-shadow: 1px 1px 3px black;
 }
 
 
@@ -1125,8 +1205,13 @@ html{
     text-transform: uppercase;
     position: absolute;
     bottom: 5%;
+
+    transition: all 300ms ease-in-out;
 }
 
+.game__container-category:hover{
+    background-color: var(--color-bg-navbar);
+}
 
 
 
@@ -1182,7 +1267,17 @@ html{
 
 .post__container-image{
     position: relative;
+    overflow: hidden;
 }
+
+.post__img{
+    transition: all 300ms ease-in-out;
+}
+
+.post__img:hover{
+    transform: scale(1.1);
+}
+
 
 .post__container-category{
     background-color: var(--color-secondary);
@@ -1195,6 +1290,11 @@ html{
     position: absolute;
     bottom: 5%;
     left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.post__container-category:hover{
+    background-color: var(--color-bg-navbar);
 }
 
 .post__details{
@@ -1205,6 +1305,11 @@ html{
     text-transform: uppercase;
     font-size: 2.1rem;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms ease-in-out;
+}
+
+.post__title:hover{
+    color: var(--color-secondary);
 }
 
 .post__meta{
@@ -1240,8 +1345,17 @@ html{
 
 .post-footer__btn{
     border: 1px solid var(--color-text-marquee);
+    font-weight: 500;
+    text-transform: capitalize;
     padding: .5rem;
+    transition: all 300ms ease-in-out;
 }
+
+.post-footer__btn:hover{
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
 
 .posts__container-btn{
     width: 100%;
@@ -1254,6 +1368,13 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.posts__container-btn:hover{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border: 1.5px solid var(--color-bg-navbar);
 }
 
 
@@ -1270,7 +1391,8 @@ html{
     margin-top: 6rem;
     background-color: var(--color-bg-aside);
     padding: 1.5rem;
-    height: auto;
+    /* para darle la altura del contenido */
+    height: fit-content;
 }
 
 /* Login */
@@ -1355,6 +1477,10 @@ html{
     padding: 1rem 2rem;
     color: var(--color-primary);
     margin-bottom: 1rem;
+    transition: all 300ms ease-in-out;
+}
+.social__item:hover{
+    padding-left: 9rem;
 }
 
 .social__link{
@@ -1489,6 +1615,10 @@ html{
 
 .recent__title{
     font-size: 1.7rem;
+    transition: all 300ms ease-in-out;
+}
+.recent__title:hover{
+    color: var(--color-secondary);
 }
 .recent__author{
     color: var(--color-secondary);
@@ -1500,6 +1630,11 @@ html{
 
 .recent__link-image{
     width: 7.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.recent__link-image:hover{
+    transform: scale(1.1);
 }
 
 
@@ -1543,8 +1678,16 @@ html{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    transition: all 300ms ease-in-out;
 }
 
+.list-reviews__container-title:hover{
+    color: var(--color-secondary);
+}
+
+.list-reviews__mark{
+    font-weight: bold;
+}
 .list-reviews__progressbar{
     background-color: var(--color-bg-navbar);
     width: 100%;
@@ -1642,11 +1785,13 @@ html{
     padding: 1rem 1.5rem;
     border-radius: 3px;
     font-size: 1.5rem;
+    border: 1px solid var(--color-secondary);
     transition: all 300ms ease-in-out;
 }
 
 .tags__tag:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background-color: transparent;
 }
 
 
@@ -1683,6 +1828,11 @@ html{
 
 .list-popular__title{
     color: var(--color-primary);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.list-popular__title:hover{
+    color: var(--color-secondary);
 }
 
 .list-popular__author{
@@ -1707,6 +1857,11 @@ html{
 .list-popular__link-image{
     width: 8.5rem;
     margin-right: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.list-popular__link-image:hover{
+    transform: scale(1.1);
 }
 
 .list-popular__img{
@@ -1735,7 +1890,8 @@ html{
     width: 5.4rem;
     height: .2rem;
     background-color: var(--color-secondary);
-    margin-left: 42%;
+    /* margin-left: 42%; */
+    margin: 0 auto;
 }
 
 .fslider__link{
@@ -1747,6 +1903,14 @@ html{
 
 .footer__fslider{
     position: relative;
+    overflow: hidden;
+}
+.fslider__img{
+    transition: all 300ms ease-in-out;
+}
+
+.fslider__img:hover{
+    transform: scale(1.1);
 }
 
 .fslider__info{
@@ -1757,11 +1921,16 @@ html{
     text-align: center;
 }
 
+.fslider__category{
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+}
+
 
 /* footer final */
 
 .footer__description{
-    background-color: black;
+    background-color: rgba(0,0,0,.20);
     position: absolute;
     bottom: 0;
     left: 0;
