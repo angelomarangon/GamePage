@@ -128,9 +128,10 @@ html{
    
 }
 
+
+
 .search__input{
-    display: none;
-    width: 20rem;
+    width: 0;
     height: 100%;
     font-size: 1.8rem;
     background-color: var(--color-secondary);
@@ -140,6 +141,12 @@ html{
 
     transition: all 300ms ease-in-out;
 }
+
+.visible{
+    padding-left: 1rem;
+    width: 30rem;
+}
+
 .search__input::placeholder{
     color: var(--color-primary);
     opacity: 1;
