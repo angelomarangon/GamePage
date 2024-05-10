@@ -15,6 +15,7 @@
     --color-youtube: #CC191E;
     --color-instagram: #EA4C89;
     --color-linkedin: #F4A62A;
+    --color-footer: #222;
 
 }
 
@@ -1576,3 +1577,204 @@ html{
 .list-reviews__bar--5{
     width: 90%;
 }
+
+
+
+
+
+
+
+/* footer */
+
+.layout__footer{
+    background-color: var(--color-footer);
+    padding: 3rem 0;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    min-width: 100rem;
+    margin: 0 auto;
+}
+
+/* izquierda */
+.footer__left-container{
+    flex-basis: 33%;
+    padding-right: 1rem;
+}
+
+.footer__about{
+    margin-bottom: 3rem;
+}
+
+.about__title{
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.about__description{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: .7;
+}
+
+.tags__title{
+    margin-bottom: 2rem;
+    color: var(--color-secondary);
+}
+
+.tags__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    color: var(--color-primary);
+}
+
+.tags__tag{
+    background-color: var(--color-secondary);
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.tags__tag:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* centro */
+.footer__center-container{
+    flex-basis: 33%;
+}
+.footer__title{
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+.list-popular__item{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.list-popular__detail{
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.list-popular__container-info{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-marquee);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.list-popular__title{
+    color: var(--color-primary);
+}
+
+.list-popular__author{
+    
+    color: var(--color-secondary);
+}
+
+.list-popular__numer__views{
+    opacity: .5;
+}
+
+.list-popular__numer__comments{
+    color: var(--color-primary);
+    opacity: .8;
+}
+
+.list-popular__meta-info{
+    display: flex;
+    gap: 1rem;
+}
+
+.list-popular__link-image{
+    width: 8.5rem;
+    margin-right: 1rem;
+}
+
+.list-popular__img{
+    width: 8.5rem;
+}
+
+
+
+
+/* derecha */
+.footer__right-container{
+    flex-basis: auto;
+   
+}
+
+.fslider__category{
+    color: var(--color-primary);
+    opacity: .8;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: .5rem;
+}
+
+.fslider__separator{
+    width: 5.4rem;
+    height: .2rem;
+    background-color: var(--color-secondary);
+    margin-left: 42%;
+}
+
+.fslider__link{
+    color: var(--color-primary);
+    text-shadow: 1px 1px 3px black;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.footer__fslider{
+    position: relative;
+}
+
+.fslider__info{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40%;
+    text-align: center;
+}
+
+
+/* footer final */
+
+.footer__description{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.3rem;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text{
+    display: inline-block;
+}
+
+
