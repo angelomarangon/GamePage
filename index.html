@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- Estilos generales -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <!-- Fuentes -->
@@ -40,6 +42,91 @@
         <!-- Navegador -->
         <section class="layout__nav">
             <nav class="nav__navbar">
+
+                <!-- Boton menu responnsive -->
+                <div class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Menu responsive -->
+                <ul class="navbar__mobile-list">
+
+                    <!-- Elemento con submenu -->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">
+                                Noticias
+                            </a>
+
+                            <div class="mobile-list__icon" id="icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+
+                            
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Viedeojuegos</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Cine</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Tecnologia</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Analisis
+                        </a>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Juegos
+                        </a>
+                    </li>
+
+                    <!-- Elemento con submenu -->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">
+                                Categorias
+                            </a>
+
+                            <div class="mobile-list__icon" id="icon2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu2">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Accion</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Lucha</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">SandBox</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Ranking
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Navegacion de escritorio -->
                 <ul class="navbar__list">
                     <!-- Noticias -->
                     <li class="navbar__item">
@@ -1045,7 +1132,7 @@
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image-container">
                         <a href="#" class="carousel-games__image-link">
                             <img src="./assets/img/carrusel-games-3.jpg" class="carousel-games__img" alt="">
@@ -1073,7 +1160,7 @@
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image-container">
                         <a href="#" class="carousel-games__image-link">
                             <img src="./assets/img/carrusel-games-4.jpg" class="carousel-games__img" alt="">
