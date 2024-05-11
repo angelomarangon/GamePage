@@ -9,6 +9,8 @@
 }
 
 
+
+
 @media (max-width: 1024px) {
     .navbar__mobile-btn {
         display: flex;
@@ -211,6 +213,11 @@
         margin: 0;
     }
 
+
+    .menu__open{
+        display: block;
+    }
+
 }
 
 @media (max-width: 775px){
@@ -392,6 +399,16 @@
     .footer__text{
         font-size: 1.2rem;
     }
+
+
+    .marquee__header{
+        display: none;
+    }
+
+    .visible{
+        width: 23.5rem;
+    }
+
 }
 
 
