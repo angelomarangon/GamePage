@@ -32,3 +32,16 @@ submenu_btn2.addEventListener('click', ()=> {
     submenu2.classList.toggle('menu__open');
 
 })
+
+
+
+// redimensionado
+
+window.addEventListener('resize', ()=>{
+
+    let win = parseFloat(document.body.clientWidth);
+
+    if(win > 1024){
+        mobile__menu.classList.remove('menu__open');
+    }
+})
